@@ -1,4 +1,4 @@
-# Alex Chen — Portfolio
+# Daniel Constantine — Portfolio
 
 A minimalist, responsive software engineer portfolio built with **React + Vite**. Features a light/dark theme toggle, scroll-triggered animations, and a clean black & white aesthetic.
 
@@ -56,15 +56,15 @@ npm run preview
 
 ## Customization
 
-| What to change       | Where to look                                        |
-| -------------------- | ---------------------------------------------------- |
-| Name & bio           | Hero section + `about-text` paragraph in `App.jsx`   |
-| Work history         | `experiences` array at top of `App.jsx`              |
-| Projects             | `projects` array at top of `App.jsx`                 |
-| Colors               | CSS variables in `:root` and `[data-theme="dark"]`   |
-| Fonts                | Google Fonts `@import` URL in `<style>`              |
-| Social links         | Footer `<a>` tags                                    |
-| Page title & favicon | `index.html` `<title>` and `<link rel="icon">`      |
+| What to change       | Where to look                                      |
+| -------------------- | -------------------------------------------------- |
+| Name & bio           | Hero section + `about-text` paragraph in `App.jsx` |
+| Work history         | `experiences` array at top of `App.jsx`            |
+| Projects             | `projects` array at top of `App.jsx`               |
+| Colors               | CSS variables in `:root` and `[data-theme="dark"]` |
+| Fonts                | Google Fonts `@import` URL in `<style>`            |
+| Social links         | Footer `<a>` tags                                  |
+| Page title & favicon | `index.html` `<title>` and `<link rel="icon">`     |
 
 ## Deployment
 

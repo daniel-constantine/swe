@@ -41,49 +41,112 @@ const experiences = [
     company: "Capital One",
     period: "2024 — Present",
     description:
-      "Leading frontend architecture for a high-traffic SaaS platform. Reduced bundle size by 40% and improved Core Web Vitals across the product suite.",
+      "Spearheaded development of the Vendor Assessment Portal, a full-stack web application using React.js and Express.js, streamline ISO and architecture review for potential vendors, centralizing assessments, and improving onboarding efficiency by 34%.",
+    responsibilities: [
+      // "Spearheaded development of the Vendor Assessment Portal, a full-stack web application using React.js and Express.js, streamline ISO and architecture review for potential vendors, centralizing assessments, and improving onboarding efficiency by 34%",
+      "Designed and built a serverless Python workflow using AWS Lambda, automated through AWS EventBridge to periodically retrieve data from Snowflake and send alerts to Slack, resulting in a 90% reduction in inactive incidents over 3 months",
+      // "Developed Performance and Talent Hub (PATH), a full stack application used by the entire company for the performance management process. Integrated GenAI capability to summarize feedback which saving the enterprise ~1.3 million hours annually",
+      "Engineered and maintained Ordino, a Python-based enterprise Slack chatbot used by 150+ development teams at Capital One, enabling teams to ensure application compliance with enterprise mandates, resulting in more secure, resilient, and optimized systems",
+      // "Partnered with Human Resources team to develop Izby, a Python-based Slack chatbot that detects non-inclusive language / problematic terms and suggests inclusive alternatives, fostering more compassionate team communication",
+    ],
   },
   {
     role: "Software Engineer II",
     company: "WeightWatchers",
     period: "2023 — 2024",
     description:
-      "Built real-time data visualization dashboards and internal tooling serving 200+ engineers. Championed migration from class components to hooks.",
+      "Developed and maintained scalable and highly available full-stack applications for the Studio Tech team at WeightWatchers, allowing coaches to engage with members via group chat and manage administrative tasks during virtual and in-person workshops",
+    responsibilities: [
+      // "Developed and maintained scalable and highly available full-stack applications for the Studio Tech team at WeightWatchers, allowing coaches to engage with members via group chat and manage administrative tasks during virtual and in-person workshops",
+      // "Built and implemented Coach Experience Platform (CXP), a React.js and Next.js application used by WeightWatchers coaches worldwide, which enhanced the user experience and saved the company approximately $3 million annually",
+      // "Built a feature-flagging microservice using Node.js and Express.js, leveraging PostgreSQL's ltree data type for dynamic feature toggling, which reduced the need for manual application redeployment and increased engineering productivity by 80%",
+      // "Spearheaded initiatives to integrate Greenhouse APIs into WeightWatchers' corporate careers page, transforming the site with React.js, Drupal, and Storybook.js to deliver a modern, user-friendly interface, and a seamless experience for job seekers%",
+      // "Coordinated with the Database Administrator (DBA) team to consolidate three PostgreSQL databases into a single unified database, resulting in a 30% improvement in query performance, simplified maintenance, and enhanced resource efficiency",
+    ],
   },
   {
     role: "Software Engineer",
     company: "Rent the Runway",
     period: "2021 — 2022",
     description:
-      "Developed responsive marketing sites and e-commerce storefronts for agency clients using React, Node.js, and PostgreSQL.",
+      "Worked on the Warehouse Automation team, developing software applications to manage inbound (receiving units from customers and storing them in inventory) and outbound workflows (processing and shipping customer orders) across all warehouses; collaborated closely with the Fulfillment, Transportation, and Operation teams",
+    responsibilities: [
+      // "Worked on the Warehouse Automation team, developing software applications to manage inbound (receiving units from customers and storing them in inventory) and outbound workflows (processing and shipping customer orders) across all warehouses; collaborated closely with the Fulfillment, Transportation, and Operation teams",
+      // "Developed Packout, a backend microservice using Kotlin, Spring Boot, MongoDB, and RabbitMQ, to replace third-party software, responsible for managing the outbound workflow in the New Jersey warehouse, resulting in annual savings of approximately $1 million",
+      // "Enhanced and maintained YAMS, a React.js application utilized by the Operations team to provide real-time status updates of packaging stations, improved the warehouse associates' responsiveness and reduced incidents caused by overloaded packaging stations by 25%",
+      // "Enhanced and maintained YAMS, a React.js application used internally by the Operations team for releasing order batches, managing shipping units, and automating cleaning and drying processes, resulting in a 33\% increase in productivity",
+    ],
   },
 ];
 
 const projects = [
   {
-    title: "Synth",
-    description:
-      "A real-time collaborative code editor with WebSocket sync, syntax highlighting, and conflict-free replicated data types.",
-    tags: ["React", "Node.js", "CRDT", "WebSocket"],
+    title: "NYC School Navigator",
+    description: "Find and compare NYC public, charter, and private school",
+    tags: ["JavaScript/React", "Python/FastAPI", "Ollama/LangChain/ChromaDB"],
+    problem:
+      "The DOE website is a maze and comparing schools is a nightmare. I wanted to provide clean and intuitive experience for parents who wants the best education for their child",
+    solutions: [
+      "Develop dashboard to browse 1,500+ NYC schools across all five boroughs with real data (data is puled from NYC DOE sources and NYC Open Data Portal",
+      "Interactive Google map view with color-coded markers and implement commute time calculator",
+      "Integrate AI chat assistant for personalized school recommendations.",
+    ],
+    achievement: [
+      "Crafted a beautiful and responsive dashboard that allows user to smart filtering schools by district, grade level, with multiple sort options, helping them to compare of up to 5 schools side by side.",
+    ],
+    youtube: "dQw4w9WgXcQ",
   },
-  {
-    title: "Terraform",
-    description:
-      "CLI tool that scaffolds full-stack projects with opinionated best practices — auth, CI/CD, linting, and deployment configs out of the box.",
-    tags: ["Go", "CLI", "DevOps"],
-  },
-  {
-    title: "Lumina",
-    description:
-      "Open-source design token manager that bridges Figma and code, generating theme files for CSS, Tailwind, and styled-components.",
-    tags: ["TypeScript", "Figma API", "Design Systems"],
-  },
-  {
-    title: "Pulse",
-    description:
-      "Lightweight application performance monitor with custom dashboards, alerting, and anomaly detection for microservices.",
-    tags: ["Python", "Grafana", "InfluxDB"],
-  },
+  // {
+  //   title: "Terraform",
+  //   description:
+  //     "CLI tool that scaffolds full-stack projects with opinionated best practices — auth, CI/CD, linting, and deployment configs out of the box.",
+  //   tags: ["Go", "CLI", "DevOps"],
+  //   problem:
+  //     "Bootstrapping new projects required hours of repetitive boilerplate setup — auth, linting, CI pipelines, and deployment configs were copy-pasted across repos.",
+  //   solutions: [
+  //     "Designed a template engine in Go with composable, swappable module presets",
+  //     "Created interactive prompts for selecting auth providers, CI platforms, and hosting targets",
+  //     "Built a plugin system allowing community-contributed scaffolding templates",
+  //     "Automated dependency resolution and version pinning during generation",
+  //   ],
+  //   achievement:
+  //     "500+ GitHub stars; reduces project setup time from ~4 hours to under 2 minutes with consistent, battle-tested configurations.",
+  //   youtube: "dQw4w9WgXcQ",
+  // },
+  // {
+  //   title: "Lumina",
+  //   description:
+  //     "Open-source design token manager that bridges Figma and code, generating theme files for CSS, Tailwind, and styled-components.",
+  //   tags: ["TypeScript", "Figma API", "Design Systems"],
+  //   problem:
+  //     "Design-to-code handoff was error-prone — designers updated tokens in Figma while engineers maintained separate, frequently out-of-sync theme files.",
+  //   solutions: [
+  //     "Built a TypeScript pipeline that connects to the Figma REST API to extract design tokens",
+  //     "Created code generators for CSS custom properties, Tailwind config, and styled-components themes",
+  //     "Implemented a watch mode with webhook listeners to auto-regenerate on every Figma publish",
+  //     "Added visual diffing reports so teams can review token changes before merging",
+  //   ],
+  //   achievement:
+  //     "Eliminated token drift across 3 product teams; cut design QA cycle time by 70% and now processes 1,200+ tokens on every Figma publish event.",
+  //   youtube: "dQw4w9WgXcQ",
+  // },
+  // {
+  //   title: "Pulse",
+  //   description:
+  //     "Lightweight application performance monitor with custom dashboards, alerting, and anomaly detection for microservices.",
+  //   tags: ["Python", "Grafana", "InfluxDB"],
+  //   problem:
+  //     "Existing APM tools were expensive and overly complex for small microservice deployments, leaving teams blind to performance regressions until users complained.",
+  //   solutions: [
+  //     "Developed a lightweight Python agent that instruments HTTP endpoints and background jobs",
+  //     "Streamed metrics to InfluxDB with automatic retention policies and downsampling",
+  //     "Built pre-configured Grafana dashboards with per-service and aggregate views",
+  //     "Implemented statistical anomaly detection with configurable Slack and email alerting",
+  //   ],
+  //   achievement:
+  //     "Deployed across 18 microservices; detected a critical memory leak within 4 minutes of deployment that would have caused a production outage.",
+  //   youtube: "dQw4w9WgXcQ",
+  // },
 ];
 
 const navLinks = ["About", "Experience", "Projects", "Contact"];
@@ -122,12 +185,6 @@ export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dark, setDark] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -138,13 +195,6 @@ export default function Portfolio() {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -426,20 +476,43 @@ export default function Portfolio() {
           font-size: 0.95rem; line-height: 1.7;
           color: var(--fg-secondary);
         }
+        .exp-responsibilities {
+          margin-top: 16px;
+          padding-left: 0;
+          list-style: none;
+        }
+        .exp-responsibilities li {
+          font-size: 0.88rem;
+          line-height: 1.65;
+          color: var(--fg-muted);
+          padding: 5px 0 5px 20px;
+          position: relative;
+        }
+        .exp-responsibilities li::before {
+          content: '—';
+          position: absolute;
+          left: 0;
+          color: var(--border-input);
+        }
 
-        .projects-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 2px;
-          background: var(--border);
+        .projects-list {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+        }
+        .project-block {
           border: 1px solid var(--border);
+          border-bottom: none;
+        }
+        .project-block:last-child {
+          border-bottom: 1px solid var(--border);
         }
         .project-card {
           background: var(--card-bg);
           padding: 40px 32px;
           display: flex; flex-direction: column; gap: 14px;
           transition: background 0.4s ease, color 0.4s ease;
-          cursor: pointer; min-height: 220px;
+          cursor: pointer;
         }
         .project-card:hover {
           background: var(--card-hover-bg);
@@ -450,6 +523,10 @@ export default function Portfolio() {
           color: var(--card-hover-tag-color);
         }
         .project-card:hover .project-arrow { opacity: 1; }
+        .project-card:hover .project-detail-label { color: var(--card-hover-tag-color); }
+        .project-card:hover .project-detail-text { color: var(--card-hover-desc); }
+        .project-card:hover .project-solution-list li { color: var(--card-hover-desc); }
+        .project-card:hover .project-solution-list li::before { color: var(--card-hover-tag-color); }
         .project-title {
           font-family: 'Newsreader', Georgia, serif;
           font-size: 1.4rem; font-weight: 500;
@@ -461,10 +538,80 @@ export default function Portfolio() {
         }
         .project-card:hover .project-arrow { transform: translate(3px, -3px); }
         .project-desc {
-          font-size: 0.9rem; line-height: 1.65;
-          color: var(--fg-muted); flex: 1;
+          font-size: 0.95rem; line-height: 1.65;
+          color: var(--fg-secondary);
         }
         .project-card:hover .project-desc { color: var(--card-hover-desc); }
+        .project-details {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+          margin: 8px 0 4px;
+        }
+        .project-detail {
+          display: flex; flex-direction: column; gap: 6px;
+        }
+        .project-detail-label {
+          font-family: 'DM Mono', monospace;
+          font-size: 0.62rem;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: var(--fg-faint);
+          transition: color 0.4s ease;
+        }
+        .project-detail-text {
+          font-size: 0.85rem;
+          line-height: 1.6;
+          color: var(--fg-muted);
+          transition: color 0.4s ease;
+        }
+        .project-solution-list {
+          list-style: none;
+          padding: 0; margin: 0;
+        }
+        .project-solution-list li {
+          font-size: 0.85rem;
+          line-height: 1.6;
+          color: var(--fg-muted);
+          padding: 3px 0 3px 18px;
+          position: relative;
+          transition: color 0.4s ease;
+        }
+        .project-solution-list li::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: var(--border-input);
+          font-size: 0.75rem;
+          transition: color 0.4s ease;
+        }
+        .project-video {
+          background: var(--card-bg);
+          padding: 0 32px 32px;
+          border-top: 1px solid var(--border);
+        }
+        .video-wrapper {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%;
+          overflow: hidden;
+          border-radius: 2px;
+          background: #000;
+        }
+        .video-wrapper iframe {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%; height: 100%;
+          border: none;
+        }
+        .video-caption {
+          display: block;
+          margin-top: 12px;
+          font-family: 'DM Mono', monospace;
+          font-size: 0.68rem;
+          letter-spacing: 0.08em;
+          color: var(--fg-faint);
+        }
         .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
         .project-tags span {
           font-family: 'DM Mono', monospace;
@@ -490,40 +637,32 @@ export default function Portfolio() {
           font-size: 0.95rem; color: var(--fg-muted);
           margin-bottom: 48px; line-height: 1.6;
         }
-        .form-group { margin-bottom: 24px; text-align: left; }
-        .form-label {
-          display: block;
-          font-family: 'DM Mono', monospace;
-          font-size: 0.68rem; letter-spacing: 0.12em;
-          text-transform: uppercase;
-          color: var(--fg-faint); margin-bottom: 8px;
-        }
-        .form-input, .form-textarea {
-          width: 100%; padding: 14px 0;
-          border: none; border-bottom: 1px solid var(--border-input);
-          font-family: 'Newsreader', Georgia, serif;
-          font-size: 1.05rem; color: var(--fg);
-          background: transparent; outline: none;
+        .contact-email {
+          color: var(--fg);
+          border-bottom: 1px solid var(--border-input);
+          padding-bottom: 1px;
           transition: border-color 0.3s ease;
         }
-        .form-input:focus, .form-textarea:focus { border-color: var(--fg); }
-        .form-textarea { resize: vertical; min-height: 100px; }
-        .submit-btn {
-          margin-top: 16px; padding: 16px 48px;
-          background: var(--btn-bg); color: var(--btn-fg);
+        .contact-email:hover {
+          border-color: var(--fg);
+        }
+        .mailto-btn {
+          display: inline-block;
+          margin-top: 8px;
+          padding: 18px 52px;
+          background: var(--btn-bg);
+          color: var(--btn-fg);
           border: none;
           font-family: 'DM Mono', monospace;
-          font-size: 0.75rem; letter-spacing: 0.14em;
-          text-transform: uppercase; cursor: pointer;
+          font-size: 0.75rem;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          cursor: pointer;
           transition: background 0.3s ease, transform 0.15s ease;
+          text-decoration: none;
         }
-        .submit-btn:hover { background: var(--btn-hover-bg); }
-        .submit-btn:active { transform: scale(0.97); }
-        .success-msg {
-          font-family: 'DM Mono', monospace;
-          font-size: 0.8rem; color: var(--fg);
-          margin-top: 20px; letter-spacing: 0.06em;
-        }
+        .mailto-btn:hover { background: var(--btn-hover-bg); }
+        .mailto-btn:active { transform: scale(0.97); }
 
         .footer {
           text-align: center; padding: 40px 24px;
@@ -550,8 +689,9 @@ export default function Portfolio() {
           .nav-bar.scrolled { padding: 12px 24px; }
           .nav-right { gap: 16px; }
           .exp-card { grid-template-columns: 1fr; gap: 12px; }
-          .projects-grid { grid-template-columns: 1fr; }
-          .project-card { min-height: auto; }
+          .project-details { grid-template-columns: 1fr; gap: 16px; }
+          .project-card { padding: 28px 20px; }
+          .project-video { padding: 0 20px 24px; }
           .project-arrow { opacity: 1; }
           .hero { min-height: 90vh; }
         }
@@ -572,7 +712,7 @@ export default function Portfolio() {
             className="nav-logo"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            DANIEL CONSTANTINE
+            Daniel Constantine
           </div>
           <div className="nav-right">
             <ul className="nav-links">
@@ -620,8 +760,8 @@ export default function Portfolio() {
             <em>Daniel Constantine</em>
           </h1>
           <p>
-            A software engineer who builds reliable systems with focused on
-            clean, scalable code.
+            Software engineer · building clean, performant, and thoughtful
+            digital experiences
           </p>
           <div className="scroll-indicator">
             <span>Scroll</span>
@@ -636,10 +776,10 @@ export default function Portfolio() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <p className="about-text">
-              I'm <strong>Daniel</strong>, a software engineer with 6+ years of
-              experience crafting web applications that are fast, accessible,
-              and elegantly simple. I believe great software is invisible — it
-              just works. I specialize in <strong>React</strong>,{" "}
+              I'm <strong>Daniel Constantine</strong>, a software engineer with
+              6+ years of experience crafting web applications that are fast,
+              accessible, and elegantly simple. I believe great software is
+              invisible — it just works. I specialize in <strong>React</strong>,{" "}
               <strong>TypeScript</strong>, and
               <strong> distributed systems</strong>, and I care deeply about the
               details that separate good products from great ones.
@@ -664,6 +804,13 @@ export default function Portfolio() {
                 <div>
                   <div className="exp-role">{exp.role}</div>
                   <div className="exp-desc">{exp.description}</div>
+                  {exp.responsibilities && (
+                    <ul className="exp-responsibilities">
+                      {exp.responsibilities.map((r, j) => (
+                        <li key={j}>{r}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </FadeIn>
@@ -678,19 +825,57 @@ export default function Portfolio() {
             <div className="section-label">03 — Projects</div>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <div className="projects-grid">
+            <div className="projects-list">
               {projects.map((p, i) => (
-                <div className="project-card" key={i}>
-                  <div className="project-title">
-                    {p.title}
-                    <span className="project-arrow">↗</span>
+                <div className="project-block" key={i}>
+                  <div className="project-card">
+                    <div className="project-title">
+                      {p.title}
+                      <span className="project-arrow">↗</span>
+                    </div>
+                    <div className="project-desc">{p.description}</div>
+                    <div className="project-details">
+                      <div className="project-detail">
+                        <span className="project-detail-label">Problem</span>
+                        <span className="project-detail-text">{p.problem}</span>
+                      </div>
+                      <div className="project-detail">
+                        <span className="project-detail-label">Solutions</span>
+                        <ul className="project-solution-list">
+                          {p.solutions.map((s, j) => (
+                            <li key={j}>{s}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="project-detail">
+                        <span className="project-detail-label">Result</span>
+                        <span className="project-detail-text">
+                          {p.achievement}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="project-tags">
+                      {p.tags.map((t) => (
+                        <span key={t}>{t}</span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="project-desc">{p.description}</div>
-                  <div className="project-tags">
-                    {p.tags.map((t) => (
-                      <span key={t}>{t}</span>
-                    ))}
-                  </div>
+                  {p.youtube && (
+                    <div className="project-video">
+                      <div className="video-wrapper">
+                        <iframe
+                          src={`https://www.youtube.com/embed/${p.youtube}`}
+                          title={`${p.title} demo video`}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                      <span className="video-caption">
+                        ▶ {p.title} — Project Demo
+                      </span>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -709,63 +894,32 @@ export default function Portfolio() {
             <p className="contact-sub">
               Have a project in mind or just want to say hello? I'd love to hear
               from you.
+              <br />
+              Drop me a line at{" "}
+              <a href="mailto:danielkc.dev@proton.me" className="contact-email">
+                danielkc.dev@proton.me
+              </a>
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label className="form-label">Name</label>
-                <input
-                  className="form-input"
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Email</label>
-                <input
-                  className="form-input"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Message</label>
-                <textarea
-                  className="form-textarea"
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  required
-                />
-              </div>
-              <button className="submit-btn" type="submit">
-                Send Message
-              </button>
-              {submitted && (
-                <div className="success-msg">✓ Message sent — thank you!</div>
-              )}
-            </form>
+            <a
+              href={`mailto:danielkc.dev@proton.me?subject=${encodeURIComponent("Let's work together")}&body=${encodeURIComponent("Hi Daniel,\n\nI'd love to chat about a project.\n\nBest,\n")}`}
+              className="submit-btn mailto-btn"
+            >
+              Send Message
+            </a>
           </FadeIn>
         </section>
 
         {/* FOOTER */}
         <footer className="footer">
           <div className="footer-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Resume</a>
+            <a href="https://github.com/daniel-constantine">GitHub</a>
+            <a href="https://www.linkedin.com/in/danielconstantine">LinkedIn</a>
+            <a href="mailto:danielkc.dev@proton.me">Email</a>
+            <a href="https://www.linkedin.com/in/danielconstantine">Resume</a>
           </div>
-          <div>© 2026 Alex Chen. All rights reserved.</div>
+          <div>© 2026 Daniel Constantine. All rights reserved.</div>
         </footer>
       </div>
     </>
